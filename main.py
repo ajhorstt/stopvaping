@@ -5,6 +5,10 @@ from PIL import ImageTk, Image
 
 
 def mainframe1():
+    bigframe.forget()
+    contframe.forget()
+    consframe.forget()
+    instframe.forget()
     quitmain = Button(mainframe, text="Quit", command=getridofwindowlol())
     quitmain.grid(column=0, row=1, pady=10, sticky=N)
 
@@ -19,6 +23,10 @@ def instframe1():
 
 
 def bigframe1():
+    contframe.forget()
+    mainframe.forget()
+    consframe.forget()
+    instframe.forget()
     quitbig = Button(bigframe, text="Quit", command=getridofwindowlol())
     quitbig.grid(column=0, row=1, pady=10, sticky=N)
 
