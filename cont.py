@@ -1,13 +1,12 @@
 from tkinter import *
 # Created on 20/6
-def big():
+def contactus():
     window = Tk()
-    window.title("The Big Picture")
+    window.title("Contact us")
     window.geometry("800x500+250+200")
-    # All up to here is 20/6
 
-    big = Label(window, text="The big picture - what are the issues?", font=("Helvetica", 20, 'bold'), fg='black')
-    big.pack()
+    cont = Label(window, text="Where to contact us", font=("Helvetica", 20, 'bold'), fg='black')
+    cont.pack()
 
     body1 = Label(window, text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", font=("Helvetica", 14), fg='black', padx=50, pady=25)
     body1.pack()
@@ -23,5 +22,6 @@ def big():
 
     rightframe = Label(window, width=5, height=500, fg='black', bg='black')
     rightframe.place(x=750, y=0)
+    # All up to here is 20/6
 
     window.mainloop()
